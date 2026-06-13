@@ -1,0 +1,74 @@
+Variables in Java -> A variable is a named memory location used to store data that can be changed during program execution.
+
+->Syntax:
+    dataType variableName = value;
+    Example
+    int age = 25;
+    String name = "Akash";
+    double salary = 50000.50;
+
+->Types of Variables in Java
+
+1. Local Variable -> A variable declared inside a method, constructor, or block.
+
+    public class Test {
+        public static void main(String[] args) {
+            int x = 10; // Local Variable
+            System.out.println(x);
+        }
+    }
+
+Scope: Only within the method/block where it is declared.
+
+2. Instance Variable -> A variable declared inside a class but outside methods.
+
+    public class Student {
+        String name = "Akash"; // Instance Variable
+    }
+
+Scope: Belongs to an object of the class.
+
+3. Static Variable (Class Variable) -> A variable declared with the static keyword.
+
+    public class Student {
+        static String college = "ABC College";
+    }
+
+Scope: Shared by all objects of the class.
+
+->Example
+    public class Employee {
+
+        static String company = "XYZ"; // Static Variable
+
+        String name = "Akash"; // Instance Variable
+
+        public void display() {
+            int age = 25; // Local Variable
+            System.out.println(name + " " + age);
+        }
+    }
+
+->Rules for Naming Variables
+
+    ✅ Can contain letters, digits, _, and $
+
+    ✅ Must start with a letter, _, or $
+
+    ❌ Cannot start with a digit
+
+    ❌ Cannot use Java keywords
+
+->Valid:
+    int age;
+    String studentName;
+    double salary_1;
+->Invalid:
+    int 1age;      // Starts with digit
+    int class;     // Keyword
+
+
+👌Quick Memory Trick
+    Local Variable    → Inside Method
+    Instance Variable → Inside Class, Outside Method
+    Static Variable   → Shared by All Objects

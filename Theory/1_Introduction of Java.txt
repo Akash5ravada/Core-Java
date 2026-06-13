@@ -1,0 +1,26 @@
+
+1)Introduction to Java
+
+Java is a high-level, object-oriented, platform-independent programming language developed by Sun Microsystems in 1995 and later acquired by Oracle Corporation.
+Its main principle is "Write Once, Run Anywhere (WORA)", which means Java code can run on any system that has the Java Virtual Machine (JVM) installed.
+
+
+2)Key Features of Java
+
+->Object-Oriented – Based on classes and objects.
+->Platform Independent – Runs on different operating systems.
+->Simple – Easy to learn and use.
+->Secure – Provides built-in security features.
+->Robust – Strong memory management and exception handling.
+->Multithreaded – Supports running multiple tasks simultaneously.
+->High Performance – Uses Just-In-Time (JIT) compilation.
+
+
+Example Program
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+

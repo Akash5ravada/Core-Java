@@ -1,0 +1,50 @@
+How Java Works
+
+->Java follows the principle "Write Once, Run Anywhere (WORA)".
+
+->Step-by-Step Process
+    1. Write Java Program (.java)
+                ↓
+    2. Compile using javac
+                ↓
+    3. Bytecode Generated (.class)
+                ↓
+    4. JVM Loads Bytecode
+                ↓
+    5. Bytecode Verified
+                ↓
+    6. Interpreter + JIT Compiler
+                ↓
+    7. Machine Code
+                ↓
+    8. Output
+
+->Explanation
+1. Write Source Code
+
+Create a Java file:
+
+    public class Hello {
+        public static void main(String[] args) {
+            System.out.println("Hello Java");
+        }
+    }
+
+2. Compilation -> The Java compiler (javac) converts the source code into bytecode.
+    javac Hello.java
+Output:
+    Hello.class
+
+3. Bytecode -> The .class file contains platform-independent bytecode.
+
+4. Class Loader -> The Class Loader loads the bytecode into the JVM.
+
+5. Bytecode Verifier -> The JVM checks the bytecode for security and correctness.
+
+6. Execution -> Interpreter executes bytecode line by line.
+    JIT (Just-In-Time) Compiler converts frequently used bytecode into machine code for faster execution.
+
+7. Machine Code -> The operating system executes the machine code.
+
+8. Output -> The result is displayed on the screen.
+
