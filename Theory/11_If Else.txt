@@ -1,0 +1,24 @@
+if-else Statement -> The if-else statement is used to make decisions in a program based on a condition.
+
+->Syntax
+    if (condition) {
+        // Executes if condition is true
+    } else {
+        // Executes if condition is false
+    }
+->Example
+    int age = 18;
+    if (age >= 18) {
+        System.out.println("Eligible to vote");
+    } else {
+        System.out.println("Not eligible to vote");
+    }
+
+->Output
+    Eligible to vote
+->Flow
+    Condition
+        ↓
+      True → if block executes
+        ↓
+      False → else block executes
