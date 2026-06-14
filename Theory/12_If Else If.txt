@@ -1,0 +1,55 @@
+if-else-if Statement -> The if-else-if statement is used to check multiple conditions and execute the block of the first condition that evaluates to true.
+
+->Syntax
+    if (condition1) {
+        // Code
+    } else if (condition2) {
+        // Code
+    } else if (condition3) {
+        // Code
+    } else {
+        // Default Code
+    }
+
+->Example
+    int marks = 75;
+
+    if (marks >= 90) {
+        System.out.println("Grade A");
+    } else if (marks >= 75) {
+        System.out.println("Grade B");
+    } else if (marks >= 50) {
+        System.out.println("Grade C");
+    } else {
+        System.out.println("Fail");
+    }
+
+->Output
+    Grade B
+->Flow
+    Condition1
+       ↓
+    True → Execute Block1
+       ↓
+    False
+       ↓
+    Condition2
+       ↓
+    True → Execute Block2
+       ↓
+    False
+       ↓
+    Condition3
+       ↓
+    True → Execute Block3
+       ↓
+    False
+       ↓
+    Else Block
+
+->Interview Definition -> The if-else-if statement is a decision-making structure used to test multiple conditions sequentially. The first true condition's block is executed, and the remaining conditions are skipped.
+
+->Quick Memory Trick
+    if        → First condition
+    else if   → Additional conditions
+    else      → Default block
