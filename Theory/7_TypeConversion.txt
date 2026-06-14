@@ -1,0 +1,66 @@
+Type Conversion -> Type Conversion is the process of converting a value from one data type to another.
+
+->There are 2 types of type conversion in Java:
+
+    Type Conversion
+    │
+    ├── Implicit (Widening)
+    └── Explicit (Narrowing)
+
+1. Implicit Type Conversion (Widening) -> Java automatically converts a smaller data type into a larger data type.
+
+->Example
+    int num = 100;
+    long l = num;   // int → long
+    System.out.println(l);
+->Widening Order
+    byte → short → int → long → float → double
+                    ↑
+                  char
+->Example
+    int a = 10;
+    double d = a;
+    System.out.println(d); // 10.0
+
+⭐⭐⭐No data loss occurs.
+
+2. Explicit Type Conversion (Narrowing) -> Converting a larger data type into a smaller data type manually using type casting.
+
+->Syntax
+    targetType variable = (targetType) value;
+    Example
+    double d = 10.75;
+    int i = (int) d;
+    System.out.println(i);
+
+Output:
+    10
+
+The decimal part (.75) is lost.
+
+->Another Example
+    long l = 1000;
+    int i = (int) l;
+
+⭐⭐⭐Data loss may occur.
+
+->Type Casting Example
+    public class TypeCasting {
+        public static void main(String[] args) {
+
+            // Widening
+            int a = 100;
+            double d = a;
+
+            // Narrowing
+            double x = 25.99;
+            int y = (int) x;
+
+            System.out.println(d);
+            System.out.println(y);
+        }
+    }
+
+Output:
+    100.0
+    25
