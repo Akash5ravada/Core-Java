@@ -1,0 +1,72 @@
+Switch Statement -> The switch statement is used to select and execute one block of code from multiple options based on the value of an expression.
+
+->Syntax
+    switch (expression) {
+        case value1:
+            // Code
+            break;
+
+        case value2:
+            // Code
+            break;
+
+        default:
+            // Default Code
+    }
+
+->Example
+    int day = 3;
+    switch (day) {
+        case 1:
+            System.out.println("Monday");
+            break;
+
+        case 2:
+            System.out.println("Tuesday");
+            break;
+
+        case 3:
+            System.out.println("Wednesday");
+            break;
+
+        default:
+            System.out.println("Invalid Day");
+    }
+->Output
+    Wednesday
+
+->Importance of break -> break terminates the switch block. Without it, execution continues to the next case (fall-through).
+
+    int num = 1;
+    switch (num) {
+        case 1:
+            System.out.println("One");
+        case 2:
+            System.out.println("Two");
+    }
+
+->Output
+    One
+    Two
+->Flow
+    Expression
+        ↓
+     Match Case?
+        ↓
+     Yes → Execute Case Block
+        ↓
+     break
+        ↓
+     End
+
+     No Match
+        ↓
+     default Block
+
+->Interview Definition -> The switch statement is a selection control structure used to execute one block of code from multiple choices based on the value of an expression.
+
+->Quick Memory Trick
+    switch → Multiple Choices
+    case   → Specific Option
+    break  → Exit Switch
+    default → Runs if no case matches
