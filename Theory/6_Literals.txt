@@ -1,0 +1,50 @@
+Literals -> A literal is a fixed value assigned directly to a variable in a program.
+
+->Example
+    int age = 25;
+
+Here:
+    age → Variable
+    25 → Literal
+
+->Types of Literals in Java
+1. Integer Literals -> Whole numbers without decimal points.
+
+    int a = 10;
+    int b = 100;
+
+2. Floating-Point Literals -> Numbers with decimal points.
+
+    float f = 10.5f;
+    double d = 20.5;
+
+3. Character Literals -> Single character enclosed in single quotes.
+
+    char ch = 'A';
+    char digit = '5';
+
+4. String Literals -> Sequence of characters enclosed in double quotes.
+
+    String name = "Akash";
+
+5. Boolean Literals -> Represent logical values.
+
+    boolean flag = true;
+    boolean status = false;
+
+6. Null Literal -> Represents no object reference.
+
+    String str = null;
+
+->Example Program
+    public class LiteralsDemo {
+        public static void main(String[] args) {
+            int age = 25;          // Integer Literal
+            double salary = 50000.5; // Floating Literal
+            char grade = 'A';      // Character Literal
+            String name = "Akash"; // String Literal
+            boolean pass = true;   // Boolean Literal
+    
+            System.out.println(name);
+        }
+    }
