@@ -1,0 +1,28 @@
+Ternary Operator -> The Ternary Operator (?:) is a shorthand form of the if-else statement. It is used to choose one of two values based on a condition.
+
+->Syntax
+    result = (condition) ? value1 : value2;
+    If the condition is true, value1 is returned.
+    If the condition is false, value2 is returned.
+->Example
+    int age = 20;
+    String result = (age >= 18) ? "Adult" : "Minor";
+    System.out.println(result);
+->Output
+    Adult
+->Equivalent if-else
+    String result;
+    if (age >= 18) {
+        result = "Adult";
+    } else {
+        result = "Minor";
+    }
+
+->Interview Definition -> The ternary operator (?:) is a conditional operator that provides a concise way to write simple if-else statements in a single line.
+
+->Quick Memory Trick
+    (condition) ? trueValue : falseValue
+
+->Example:
+    int max = (a > b) ? a : b;
+    This returns the larger value between a and b.
