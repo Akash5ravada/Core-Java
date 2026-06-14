@@ -1,0 +1,16 @@
+Relational Operators -> Relational operators are used to compare two values and return a boolean result (true or false).
+
+Operator	        Meaning	                    Example
+==	                Equal to	                a == b
+!=	                Not equal to	            a != b
+>	                Greater than	            a > b
+<	                Less than	                a < b
+>=	                Greater than or equal to	a >= b
+<=	                Less than or equal to	    a <= b
+
+->Example
+    int a = 10, b = 20;
+    System.out.println(a == b); // false
+    System.out.println(a != b); // true
+    System.out.println(a < b);  // true
+    System.out.println(a > b);  // false
