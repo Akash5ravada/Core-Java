@@ -1,0 +1,72 @@
+Class and Object -> Java is an Object-Oriented Programming (OOP) language. The two basic concepts of OOP are Class and Object.
+
+->Class : A Class is a blueprint or template for creating objects.
+
+It defines the properties (variables) and behaviors (methods) of an object.
+
+->Syntax
+    class ClassName {
+        // Variables
+        // Methods
+    }
+Example
+    class Student {
+        String name;
+        int age;
+    }
+
+Here, Student is a class.
+
+->Object : An Object is a real-world entity and an instance of a class.
+
+Objects occupy memory and can access the variables and methods of the class.
+
+->Syntax
+    ClassName objectName = new ClassName();
+Example
+    Student s1 = new Student();
+
+Here:
+    Student → Class
+    s1 → Object
+    new → Creates an object
+Complete Example
+    class Student {
+        String name = "Akash";
+        int age = 20;
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+
+            Student s1 = new Student();
+
+            System.out.println(s1.name);
+            System.out.println(s1.age);
+        }
+    }
+Output
+    Akash
+    20
+
+->Real-Life Example
+    Class      → Car
+    Object     → BMW, Audi, Tesla
+
+    Class      → Student
+    Object     → Akash, Rahul, Priya
+
+A class is the blueprint, and objects are the actual things created from that blueprint.
+
+->Interview Definition
+
+-- Class : A class is a blueprint or template that defines the properties and behaviors of objects.
+
+--Object : An object is an instance of a class that contains actual data and can use the class's methods and variables.
+
+->Quick Memory Trick
+    Class  → Blueprint
+    Object → Instance of Class
+    
+    Class  → Student
+    Object → Akash
