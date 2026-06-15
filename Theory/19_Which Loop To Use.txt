@@ -1,0 +1,53 @@
+Which Loop to Use in Java?
+    Choose the loop based on your requirement.
+
+->Loop	When to Use
+    for	When the number of iterations is known.
+    while	When the number of iterations is unknown.
+    do-while	When the code must execute at least once.
+
+1. for Loop : Use when you know exactly how many times the loop should run.
+
+Example
+    for (int i = 1; i <= 10; i++) {
+        System.out.println(i);
+    }
+
+✅ Print numbers 1 to 10
+✅ Traverse arrays using indexes
+
+2. while Loop : Use when the condition determines how long the loop runs.
+
+Example
+    int password;
+
+    while (password != 1234) {
+        // Ask user for password
+    }
+
+✅ Login systems
+✅ Reading data until a condition is met
+
+3. do-while Loop : Use when the loop body must run at least once.
+
+Example
+    int choice;
+
+    do {
+        System.out.println("1. Add");
+        System.out.println("2. Exit");
+        // Read choice
+    } while (choice != 2);
+
+✅ Menu-driven programs
+✅ User input validation
+
+->Quick Interview Answer
+    for      → Number of iterations known
+    while    → Number of iterations unknown
+    do-while → Execute at least once
+
+->Memory Trick
+    Known Count?      → for
+    Unknown Count?    → while
+    Run Once Anyway?  → do-while

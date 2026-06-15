@@ -1,0 +1,64 @@
+For Loop -> A for loop is used to execute a block of code repeatedly when the number of iterations is known in advance.
+
+It is an entry-controlled loop because the condition is checked before execution.
+
+->Syntax
+    for (initialization; condition; update) {
+        // Code to execute
+    }
+
+->Components
+    Initialization → Executes once at the beginning.
+    Condition → Checked before each iteration.
+    Update → Executes after each iteration.
+
+->Example
+    for (int i = 1; i <= 5; i++) {
+        System.out.println(i);
+    }
+Output
+    1
+    2
+    3
+    4
+    5
+
+->Flow
+    Initialization
+          ↓
+      Condition
+          ↓
+        True
+          ↓
+     Execute Block
+          ↓
+        Update
+          ↓
+      Condition Again
+          ↓
+     False → Exit Loop
+
+->Infinite For Loop
+    for (;;) {
+        System.out.println("Infinite Loop");
+    }
+
+Since no condition is provided, it always evaluates to true.
+
+->Interview Definition : A for loop is an entry-controlled loop used to repeatedly execute a block of code when the number of iterations is known beforehand.
+
+->Quick Memory Trick
+for (start; condition; update)
+
+Example:
+    for (int i = 1; i <= 5; i++)
+    int i = 1 → Start
+    i <= 5 → Condition
+    i++ → Update
+
+->When to Use? : ✅ Use a for loop when you know how many times the loop should run.
+
+->Examples:
+    Printing numbers 1 to 100
+    Traversing an array
+    Running a task a fixed number of times

@@ -1,0 +1,38 @@
+Need of Loops -> A loop is used to execute a block of code repeatedly until a specified condition becomes false.
+
+->Why Do We Need Loops?
+
+Without loops:
+    System.out.println("Hello");
+    System.out.println("Hello");
+    System.out.println("Hello");
+    System.out.println("Hello");
+    System.out.println("Hello");
+
+This leads to repetitive code.
+
+Using a loop:
+
+    for (int i = 1; i <= 5; i++) {
+        System.out.println("Hello");
+    }
+Output
+    Hello
+    Hello
+    Hello
+    Hello
+    Hello
+
+->Advantages of Loops
+    Reduce code repetition.
+    Save time and effort.
+    Make programs shorter and easier to maintain.
+    Handle repetitive tasks efficiently.
+    Improve code readability.
+
+->Types of Loops in Java
+    for loop – When the number of iterations is known.
+    while loop – When the number of iterations is unknown.
+    do-while loop – Executes at least once before checking the condition.
+
+Interview Definition -> Loops are control structures used to repeatedly execute a block of code as long as a specified condition is true, reducing code duplication and improving efficiency.
