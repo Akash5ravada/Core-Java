@@ -1,0 +1,75 @@
+Stack and Heap Memory -> Java uses Stack Memory and Heap Memory to manage data during program execution.
+
+->Stack Memory
+
+Stack Memory stores:
+    Local Variables
+    Method Calls
+    Method Parameters
+    Characteristics
+    Memory is allocated and deallocated automatically.
+    Faster access.
+    Each thread has its own stack.
+    Stores temporary data.
+Example
+    public static void main(String[] args) {
+        int a = 10;  // Stored in Stack
+    }
+
+->Heap Memory
+
+Heap Memory stores:
+    Objects
+    Instance Variables
+    Arrays
+    Characteristics
+    Shared among all threads.
+    Larger than stack memory.
+    Managed by Garbage Collector.
+    Stores objects created using new.
+Example
+    Student s = new Student();
+
+Here:
+    s (reference variable) → Stack
+    new Student() object → Heap
+Example
+    class Student {
+        int age = 20;
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Student s = new Student();
+        }
+    }
+
+->Memory Representation
+Stack Memory               Heap Memory
+------------              ----------------
+s  ----------->           Student Object
+                           age = 20
+->Stack vs Heap
+Stack                                           Heap
+Stores local variables and method calls	        Stores objects and arrays
+Faster access	                                Slower access
+Automatically managed	                        Managed by Garbage Collector
+Smaller memory size	                            Larger memory size
+Thread-specific	                                Shared among threads
+
+->Interview Definition
+    ->Stack Memory : Stores local variables, method calls, and references. It follows the LIFO (Last In, First Out) principle.
+
+    ->Heap Memory : Stores objects and arrays created during program execution and is managed by the Garbage Collector.
+
+->Quick Memory Trick
+    Stack → Variables, Methods, References
+    Heap  → Objects, Arrays
+
+    new Keyword → Heap Memory
+    Reference Variable → Stack Memory
+->Simple Example
+    Student s = new Student();
+    Stack          Heap
+    -----          -----
+    s   -------->  Student Object
