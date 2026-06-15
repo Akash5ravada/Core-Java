@@ -1,0 +1,54 @@
+Need of Array in Java
+    An array is used to store multiple values of the same data type in a single variable.
+
+->Why Do We Need Arrays?
+
+    Without an array, if we want to store 5 marks:
+
+        int mark1 = 80;
+        int mark2 = 85;
+        int mark3 = 90;
+        int mark4 = 75;
+        int mark5 = 95;
+
+This becomes difficult to manage when the number of values increases.
+
+Using an array:
+    int[] marks = {80, 85, 90, 75, 95};
+
+Now all values are stored in a single variable.
+
+->Advantages of Arrays
+    Stores multiple values in one variable.
+    Reduces the number of variables needed.
+    Easy to access data using indexes.
+    Simplifies looping and data processing.
+    Improves code readability.
+
+Example
+    int[] marks = {80, 85, 90, 75, 95};
+
+    for (int i = 0; i < marks.length; i++) {
+        System.out.println(marks[i]);
+    }
+Output
+    80
+    85
+    90
+    75
+    95
+
+->Interview Definition : An array is used to store multiple elements of the same data type in a single variable, making data storage and processing more efficient.
+
+->Quick Memory Trick
+    Without Array → Many Variables
+    With Array    → One Variable, Many Values
+    Real-Life Example
+        Student Marks:
+            80, 85, 90, 75, 95
+
+        Instead of:
+            mark1, mark2, mark3, mark4, mark5
+    
+        Use:
+            marks[]

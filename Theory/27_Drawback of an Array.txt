@@ -1,0 +1,49 @@
+Drawbacks of Arrays : Although arrays are fast and simple, they have some limitations.
+
+1. Fixed Size
+    Once an array is created, its size cannot be changed.
+    int[] arr = new int[5];
+If you need more than 5 elements later, you must create a new array.
+❌ Not flexible.
+
+2. Stores Only Same Data Type
+An array can store elements of only one data type.
+    int[] arr = {10, 20, 30};
+You cannot store different types like int, String, and double in the same array.
+❌ Less flexibility.
+
+3. Memory Wastage
+If the allocated size is larger than the number of elements used, memory is wasted.
+    int[] arr = new int[100];
+If only 10 elements are used, the remaining 90 locations are unused.
+❌ Wastes memory.
+
+4. Insertion and Deletion are Difficult
+To insert or delete an element, other elements may need to be shifted.
+10 20 30 40
+Insert 25 between 20 and 30:
+10 20 25 30 40
+Elements must be shifted.
+❌ Time-consuming.
+
+5. No Built-in Dynamic Growth
+Arrays cannot grow automatically when full.
+int[] arr = new int[5];
+After 5 elements, you cannot add more without creating a new array.
+❌ Dynamic structures like ArrayList solve this problem.
+
+Interview Definition : The main drawbacks of arrays are fixed size, same data type restriction, memory wastage, difficult insertion/deletion operations, and lack of dynamic resizing.
+
+->Quick Memory Trick
+    Arrays Drawbacks
+    1. Fixed Size
+    2. Same Data Type Only
+    3. Memory Wastage
+    4. Difficult Insertion/Deletion
+    5. No Dynamic Growth
+    Why Use ArrayList Instead?
+    Array      → Fixed Size
+    ArrayList  → Dynamic Size
+    
+    Array      → Fast Access
+    ArrayList  → Flexible Growth

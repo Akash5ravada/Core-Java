@@ -1,0 +1,124 @@
+Jagged Array : A Jagged Array is a multidimensional array where each row can have a different number of columns.
+
+Unlike a regular 2D array, all rows do not need to be the same size.
+
+Example
+    int[][] arr = {
+        {10, 20, 30},
+        {40, 50},
+        {60, 70, 80, 90}
+    };
+->Memory Representation
+    Row 0 → 10 20 30
+    Row 1 → 40 50
+    Row 2 → 60 70 80 90
+Program
+    public class JaggedArray {
+        public static void main(String[] args) {
+
+            int[][] arr = {
+                {10, 20, 30},
+                {40, 50},
+                {60, 70, 80, 90}
+            };
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    System.out.print(arr[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+Output
+    10 20 30
+    40 50
+    60 70 80 90
+
+->Interview Definition : A jagged array is an array of arrays in which each row can have a different number of elements.
+
+3D Array : A 3D Array is an array of 2D arrays. It stores data in three dimensions.
+
+Syntax
+    int[][][] arr = new int[2][3][4];
+    2 → Blocks
+    3 → Rows
+    4 → Columns
+Example
+    int[][][] arr = {
+        {
+            {1, 2},
+            {3, 4}
+        },
+        {
+            {5, 6},
+            {7, 8}
+        }
+    };
+
+->Memory Representation
+    Block 0
+      1 2
+      3 4
+
+    Block 1
+      5 6
+      7 8
+Accessing Elements
+    System.out.println(arr[1][0][1]);
+Output
+    6
+Program
+    public class ThreeDArray {
+        public static void main(String[] args) {
+
+            int[][][] arr = {
+                {
+                    {1, 2},
+                    {3, 4}
+                },
+                {
+                    {5, 6},
+                    {7, 8}
+                }
+            };
+
+            System.out.println(arr[1][0][1]);
+        }
+    }
+Output
+    6
+
+->Quick Comparison
+Feature	                Jagged Array	                3D Array
+Structure	            Rows of different sizes	        Array of 2D arrays
+Dimensions	            Usually 2D	                    3 Dimensions
+Example	                { {1,2}, {3,4,5} }              arr[block][row][column]
+
+->Quick Memory Trick
+    1D Array → [10, 20, 30]
+
+    2D Array →
+    [
+     [1,2],
+     [3,4]
+    ]
+
+    Jagged Array →
+    [
+     [1,2,3],
+     [4,5],
+     [6,7,8,9]
+    ]
+
+    3D Array →
+    [
+      [
+        [1,2],
+        [3,4]
+      ],
+      [
+        [5,6],
+        [7,8]
+      ]
+    ]

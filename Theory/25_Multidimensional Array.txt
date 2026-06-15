@@ -1,0 +1,84 @@
+Multidimensional Array : A Multidimensional Array is an array that contains other arrays as its elements.
+
+The most common multidimensional array is the 2D Array (Matrix), which stores data in rows and columns.
+
+Syntax
+    Declaration
+        int[][] arr;
+    Creation
+        int[][] arr = new int[3][3];
+
+This creates a 3 × 3 array.
+
+    Initialization
+        int[][] arr = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+->Memory Representation
+          Column
+           0  1  2
+    Row 0  1  2  3
+    Row 1  4  5  6
+    Row 2  7  8  9
+
+Accessing elements:
+    arr[0][0] = 1;
+    arr[1][2] = 6;
+    arr[2][1] = 8;
+Example Program
+    public class Matrix {
+        public static void main(String[] args) {
+
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+
+            System.out.println(arr[1][2]);
+        }
+    }
+Output
+    6
+
+Traversing a 2D Array
+    int[][] arr = {
+        {1, 2},
+        {3, 4}
+    };
+
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr[i].length; j++) {
+            System.out.print(arr[i][j] + " ");
+        }
+        System.out.println();
+    }
+Output
+    1 2
+    3 4
+
+->Uses of Multidimensional Arrays
+    Matrix operations
+    Game boards (Chess, Tic-Tac-Toe)
+    Tabular data (Rows and Columns)
+    Image processing
+
+->Interview Definition : A multidimensional array is an array of arrays used to store data in multiple dimensions, such as rows and columns.
+
+->Quick Memory Trick
+    1D Array → Single Row
+    [10, 20, 30]
+
+    2D Array → Rows & Columns
+    [
+     [1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]
+    ]
+Syntax Reminder
+    int[][] matrix = new int[3][3];
+    First [] → Rows
+    Second [] → Columns

@@ -1,0 +1,64 @@
+Creation of Array : An array is created to store multiple values of the same data type.
+
+1. Array Declaration : Declare an array reference variable.
+        int[] arr;
+or
+        int arr[];
+
+2. Array Creation : Create memory for the array using the new keyword.
+        int[] arr = new int[5];
+This creates an array of size 5.
+
+Memory Representation
+Index:  0   1   2   3   4
+Value:  0   0   0   0   0
+
+(Default value of int is 0.)
+
+3. Array Initialization : Assign values to array elements.
+
+    arr[0] = 10;
+    arr[1] = 20;
+    arr[2] = 30;
+    arr[3] = 40;
+    arr[4] = 50;
+Complete Example
+    public class ArrayDemo {
+        public static void main(String[] args) {
+
+            int[] arr = new int[5];
+
+            arr[0] = 10;
+            arr[1] = 20;
+            arr[2] = 30;
+            arr[3] = 40;
+            arr[4] = 50;
+
+            System.out.println(arr[2]);
+        }
+    }
+Output
+    30
+
+Shortcut: Declaration, Creation & Initialization Together
+    int[] arr = {10, 20, 30, 40, 50};
+Accessing Elements
+    System.out.println(arr[0]); // 10
+    System.out.println(arr[3]); // 40
+
+->Interview Definition : Array creation is the process of allocating memory for a fixed number of elements of the same data type using the new keyword.
+
+->Quick Memory Trick
+    Array Creation Steps
+        1. Declaration
+           int[] arr;
+        
+        2. Creation
+           arr = new int[5];
+        
+        3. Initialization
+           arr[0] = 10;
+        
+        Or in one line:
+        
+        int[] arr = {10, 20, 30, 40, 50};
