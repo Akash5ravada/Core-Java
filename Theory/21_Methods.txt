@@ -1,0 +1,70 @@
+Methods -> A method is a block of code that performs a specific task. It is used to reuse code and avoid repetition.
+
+->Syntax
+    returnType methodName() {
+        // Method body
+    }
+Example
+    public class Test {
+
+        void display() {
+            System.out.println("Hello Java");
+        }
+
+        public static void main(String[] args) {
+            Test t = new Test();
+            t.display();
+        }
+    }
+Output
+    Hello Java
+
+->Types of Methods
+1. Method Without Parameters
+    void greet() {
+        System.out.println("Welcome");
+    }
+    Calling
+    greet();
+2. Method With Parameters
+    void add(int a, int b) {
+        System.out.println(a + b);
+    }
+    Calling
+    add(10, 20);
+Output
+    30
+3. Method With Return Type
+    int add(int a, int b) {
+        return a + b;
+    }
+Calling
+    int result = add(10, 20);
+    System.out.println(result);
+Output
+    30
+Components of a Method
+    int add(int a, int b) {
+        return a + b;
+    }
+    int → Return Type
+    add → Method Name
+    int a, int b → Parameters
+    return → Returns a value
+
+->Advantages of Methods
+    Code Reusability
+    Reduces Code Duplication
+    Improves Readability
+    Easier Maintenance
+
+->Interview Definition : A method is a block of code that performs a specific task and can be called whenever needed, promoting code reusability and modularity.
+
+->Quick Memory Trick
+    Method = Define Once + Use Many Times
+    Return Type + Method Name + Parameters + Method Body
+    Method Categories
+        1. No Parameters, No Return Value
+        2. Parameters, No Return Value
+        3. No Parameters, Return Value
+        4. Parameters, Return Value
