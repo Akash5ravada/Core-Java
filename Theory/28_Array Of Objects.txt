@@ -1,0 +1,62 @@
+Array of Objects : An Array of Objects is an array that stores references to objects instead of primitive values.
+
+It allows you to store multiple objects of the same class in a single array.
+
+->Syntax
+    ClassName[] arrayName = new ClassName[size];
+Example
+    Student Class
+    class Student {
+        String name;
+
+        Student(String name) {
+            this.name = name;
+        }
+    }
+Creating an Array of Objects
+    public class Main {
+        public static void main(String[] args) {
+
+            Student[] students = new Student[3];
+
+            students[0] = new Student("Akash");
+            students[1] = new Student("Rahul");
+            students[2] = new Student("Priya");
+
+            for (int i = 0; i < students.length; i++) {
+                System.out.println(students[i].name);
+            }
+        }
+    }
+Output
+    Akash
+    Rahul
+    Priya
+->Memory Representation
+Stack               Heap
+-----               ----
+students ───────► [Ref][Ref][Ref]
+                   ↓    ↓    ↓
+                Student Student Student
+                "Akash" "Rahul" "Priya"
+The array stores references.
+Actual objects are created in Heap Memory.
+
+Real-Life Example
+    Employee[] emp = new Employee[2];
+
+    emp[0] = new Employee();
+    emp[1] = new Employee();
+
+Here, emp stores references to multiple Employee objects.
+
+->Interview Definition : An array of objects is an array that stores references to objects of a class, allowing multiple objects of the same type to be managed together.
+
+->Quick Memory Trick
+    Primitive Array
+        int[] arr = {10, 20, 30};
+
+    Array of Objects
+        Student[] students = new Student[3];
+    Primitive array → Stores values.
+    Object array → Stores object references.
