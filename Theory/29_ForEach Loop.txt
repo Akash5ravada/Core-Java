@@ -1,0 +1,64 @@
+For-Each Loop -> The for-each loop (also called the enhanced for loop) is used to traverse arrays or collections without using an index.
+
+It simplifies code when you only need to read the elements.
+
+->Syntax
+    for (dataType variable : array) {
+        // Code
+    }
+dataType → Type of array elements
+variable → Holds the current element
+array → Array being traversed
+->Example
+public class ForEachDemo {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int num : arr) {
+            System.out.println(num);
+        }
+    }
+}
+Output
+10
+20
+30
+40
+50
+How It Works
+Array: [10, 20, 30]
+
+1st Iteration → num = 10
+2nd Iteration → num = 20
+3rd Iteration → num = 30
+
+->Advantages
+    Simple and readable.
+    No need to use an index.
+    Reduces the chance of ArrayIndexOutOfBoundsException.
+    Best for reading all elements.
+
+->Limitations
+    Cannot access the index of elements.
+    Cannot traverse in reverse order.
+    Not suitable if you need to modify array elements.
+
+->for Loop vs For-Each Loop
+        for Loop	                        For-Each Loop
+    Uses index	                        Does not use index
+    Can modify elements	                Mainly used for reading
+    Can traverse forward or backward	Traverses only forward
+    More flexible	                    Simpler and more readable
+
+->Interview Definition : The for-each loop (enhanced for loop) is used to iterate through all elements of an array or collection without using an index.
+
+Quick Memory Trick
+    for      → Need Index
+    for-each → Need Values
+Syntax Reminder
+    for (int num : arr) {
+        System.out.println(num);
+    }
+
+Read it as:"For each num in arr, execute the loop body."
