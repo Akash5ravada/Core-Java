@@ -1,0 +1,77 @@
+String : A String is a sequence of characters used to store text.
+
+In Java, String is an object of the String class and is immutable, meaning its value cannot be changed after creation.
+
+->Ways to Create a String
+1. Using String Literal (Recommended)
+    String name = "Akash";
+The string is stored in the String Pool.
+
+2. Using new Keyword
+    String name = new String("Akash");
+The string object is created in the Heap Memory.
+
+Example
+public class StringDemo {
+    public static void main(String[] args) {
+
+        String name = "Java";
+
+        System.out.println(name);
+    }
+}
+Output
+    Java
+
+->Why is String Immutable?
+    String s = "Java";
+    s = "Python";
+
+Here:
+"Java" is not modified.
+A new String object "Python" is created.
+The reference s now points to the new object.
+
+->String Memory Representation
+    String s1 = "Java";
+    String s2 = "Java";
+Stack                 String Pool (Heap)
+-----                 -------------------
+s1  ───────────────►  "Java"
+s2  ───────────────►  "Java"
+
+Both s1 and s2 refer to the same String object.
+
+->String vs Character Array
+String	                Character Array
+Immutable	            Mutable
+Object	                Array
+Rich built-in methods	Limited operations
+Easier to use	        Requires manual handling
+
+->Common String Methods
+Method	            Description
+length()	        Returns the length of the string
+charAt(index)	    Returns the character at the given index
+toUpperCase()	    Converts to uppercase
+toLowerCase()	    Converts to lowercase
+substring()	        Returns a part of the string
+equals()	        Compares string contents
+equalsIgnoreCase()	Compares ignoring case
+contains()	        Checks if a substring exists
+replace()	        Replaces characters or text
+trim()	            Removes leading and trailing spaces
+
+->Interview Definition : A String is an immutable sequence of characters represented by the String class in Java. It is used to store and manipulate textual data.
+
+Quick Memory Trick
+    String
+    │
+    ├── Sequence of Characters
+    ├── Object
+    ├── Immutable
+    ├── Stored in String Pool (Literals)
+    └── Rich Built-in Methods
+Example
+    String name = "Akash";
+    System.out.println(name.length()); // 5
