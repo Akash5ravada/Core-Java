@@ -1,4 +1,4 @@
-package Practical;
+
 
 class Student {
     private String name;

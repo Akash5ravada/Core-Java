@@ -1,4 +1,3 @@
-package Practical;
 
 public class JaggedAndTHreeDimensional {
     public static void main(String[] args) {

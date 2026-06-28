@@ -1,4 +1,3 @@
-package Practical;
 
 public class ForEachLoop
 {

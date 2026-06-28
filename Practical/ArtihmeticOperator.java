@@ -1,4 +1,4 @@
-package Practical;
+
 
 public class ArtihmeticOperator {
     public static void main(String[] args) {

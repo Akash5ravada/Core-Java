@@ -1,4 +1,3 @@
-package Practical;
 
 class Methods {
     // Method to calculate the sum of two numbers

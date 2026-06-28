@@ -1,4 +1,4 @@
-package Practical;
+
 class Addition {
     public void addNumbers() {
         int a = 10;
